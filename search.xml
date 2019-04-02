@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F04%2F01%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[写在博客前]]></title>
+    <url>%2F2019%2F04%2F01%2Fmy_first_blog%2F</url>
+    <content type="text"><![CDATA[IT程序猿，整天加班不说，还要每时每刻都要学习新知识，各种书本，博客，视频和公众号等，总有你喜欢的学习方式，但是知识更新换代太快了，有时候学的东西压根就记不住，技术书籍动辄几百上千页，平时的博客很多也不全面也不连贯，每个系列的书都是一个砖头，全部记住？不可能的，就算看了，过一段时间没有去实践也会忘记，能全部记住的那可真是天才了，那些大牛也不会全部都能记住的，你要相信我。那要怎么办呢？所以就有了我的这个博客，我的这个博客主要是用于个人的第二大脑，用于迅速唤醒记忆那些庞大的知识体系。 那有的童鞋可能就要问了，那我看书不用记，那跟没看有啥区别 等一下，所以嘛，现在就有了这个博客系列，先看看这篇文章，其实很多东西是不需要记得，我看过一篇文章就写得很好链接如下：忘记是最好的老师 众所周知,IT其实是工科，实践大于死记硬背，，所以我的系列博客主要是记录android和java后台需要掌握的一些知识的笔记，用思维导图加一些必要的说明，还有大厂的必问的面试题，比如手写快速排序，java集合的各种实现啊等，现在都是面试造航母，工作拧螺丝。没办法，毕竟坑位随着行业的成熟越来越少了，所以要不断的去学习和总结，单单看，看得再多也是没用的，我的博客主要是想用高考的那套：敲黑板，划重点， 可以在每时每刻快速的把知识点串联起来，这样就不用每次看完就忘了。刚刚开始写博客，我知道要写这个要花的时间和精力会很大，希望大家多体谅，我会尽量每周都至少更新连两篇]]></content>
   </entry>
 </search>
