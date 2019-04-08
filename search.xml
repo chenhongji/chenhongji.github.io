@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[写在博客前]]></title>
-    <url>%2F2019%2F04%2F01%2Fmy_first_blog%2F</url>
-    <content type="text"><![CDATA[IT程序猿，整天加班不说，还要每时每刻都要学习新知识，各种书本，博客，视频和公众号等，总有你喜欢的学习方式，但是知识更新换代太快了，有时候学的东西压根就记不住，技术书籍动辄几百上千页，平时的博客很多也不全面也不连贯，每个系列的书都是一个砖头，全部记住？不可能的，就算看了，过一段时间没有去实践也会忘记，能全部记住的那可真是天才了，那些大牛也不会全部都能记住的，你要相信我。那要怎么办呢？所以就有了我的这个博客，我的这个博客主要是用于个人的第二大脑，用于迅速唤醒记忆那些庞大的知识体系。 那有的童鞋可能就要问了，那我看书不用记，那跟没看有啥区别 等一下，所以嘛，现在就有了这个博客系列，先看看这篇文章，其实很多东西是不需要记得，我看过一篇文章就写得很好链接如下：忘记是最好的老师 众所周知，IT其实是工科，实践大于死记硬背，所以我的系列博客主要是记录android和java后台需要掌握的一些知识的笔记，用思维导图加一些必要的说明，还有大厂的必问的面试题，比如手写快速排序，java集合的各种实现啊等，现在都是面试造航母，工作拧螺丝。没办法，毕竟坑位随着行业的成熟越来越少了，所以要不断的去学习和总结，单单看，看得再多也是没用的，我的博客主要是想用高考的那套：敲黑板，划重点， 可以在每时每刻快速的把知识点串联起来，这样就不用每次看完就忘了。刚刚开始写博客，我知道要写这个要花的时间和精力会很大，希望大家多体谅，我会尽量每周都至少更新连两篇]]></content>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Activity</title>
+      <link href="/2019/04/07/Android-activity/"/>
+      <url>/2019/04/07/Android-activity/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Activity"><a href="#Activity" class="headerlink" title="Activity"></a>Activity</h3><p>每个做android开发的人最早接触的应该就是Activity了，Activity很简单但是知识点很零碎的，特别是异常情况下的生命周期以及启动模式的混合搭配，下面是我根据android艺术开发探索一书整理出的思维导图</p><h3 id="Activity思维导图"><a href="#Activity思维导图" class="headerlink" title="Activity思维导图"></a>Activity思维导图</h3><p><img src="http://ppd8uau3t.bkt.clouddn.com/static/images/android_actvity.png?imageView2/0/q/75|watermark/2/text/5ZCJ5bCP5YWU/font/5a6L5L2T/fontsize/1000/fill/IzAwMDAwMA==/dissolve/100/gravity/SouthEast/dx/10/dy/10|imageslim" alt></p><a id="more"></a><h3 id="Activity面试题"><a href="#Activity面试题" class="headerlink" title="Activity面试题"></a>Activity面试题</h3><p><strong>问:Activity之间的通信方式</strong><br><em>Intent、静态变量/Application、文件、数据库SQLite、回调、第三方通讯框架、SharedPreference 和Service</em></p><p><strong>问:横竖屏切换的时候，Activity 各种情况下的生命周期</strong><br><em>没设置configChanges=”orientation”:先执行onSaveInstance保存状态State -&gt; 然后页面结束ondestory  重启页面恢复数据调用onRestoreInstanceState -&gt; 然后页面开始Oncreate<br>设置了configChanges=”orientation”:系统只会调用onConfigurationChanged方法</em></p><p><strong>问:Activity上有Dialog的时候按Home键时的生命周期</strong><br><em>出现Dialog不会对生命周期有影响，按Home键onPause() -&gt; onStop()</em></p><p><strong>问:两个Activity之间跳转时必然会执行的是哪几个方法</strong><br><em>onPause-&gt;onStop-&gt;onCreate-&gt; onStart-&gt;onResume</em></p><p><strong>问:前台切换到后台，然后再回到前台，Activity生命周期回调方法。弹出Dialog，生命值周期回调方法</strong><br><em>前台切换到后台:onPause-&gt;onStop,回到前台:onRestart-&gt;onStart-&gt;onResume<br>弹出Dialog:当前Activity的生命周期没有变化</em></p><p><strong>问:Activity的四种启动模式对比</strong><br><em>1. 标准模式 standard 每次都会创建一个新的实例</em><br><em>2. 栈顶复用模式：singleTop 位于栈顶就会复用，会调用onNewIntent方法，不会调用onCreate和onStart</em><br><em>3. 栈内复用模式：singleTask只要栈内存在就不会创建，也会调用onNewIntent方法，还有一个clearTop的效果，就是在此Activity上的Activity都会出栈</em><br><em>4. 单实例模式singleIntance:是一种加强的singleTask,每个Activity都只会单独的存在在一个栈中</em> </p><p><strong>问:Activity状态保存与恢复</strong><br><em>系统只在Activity异常终止的时候才会去调用onSaveInstance和onRestoreInstanceState</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> android </tag>
+            
+            <tag> activity </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写在博客前</title>
+      <link href="/2019/04/01/my_first_blog/"/>
+      <url>/2019/04/01/my_first_blog/</url>
+      
+        <content type="html"><![CDATA[<p>IT程序猿，整天加班不说，还要每时每刻都要学习新知识，各种书本，博客，视频和公众号等，总有你喜欢的学习方式，但是知识更新换代太快了，有时候学的东西压根就记不住，技术书籍动辄几百上千页，平时的博客很多也不全面也不连贯，每个系列的书都是一个砖头，全部记住？不可能的，就算看了，过一段时间没有去实践也会忘记，能全部记住的那可真是天才了，那些大牛也不会全部都能记住的，你要相信我。那要怎么办呢？<a id="more"></a>所以就有了我的这个博客，我的这个博客主要是用于个人的第二大脑，用于迅速唤醒记忆那些庞大的知识体系。</p><p>那有的童鞋可能就要问了，那我看书不用记，那跟没看有啥区别</p><p><img src="http://ppd8uau3t.bkt.clouddn.com/static/images/nizaidouwo.jpg" alt></p><p>等一下，所以嘛，现在就有了这个博客系列，先看看这篇文章，其实很多东西是不需要记得，我看过一篇文章就写得很好链接如下：<a href="http://blog.konghy.cn/2015/05/07/forget-isbest-teacher/" target="_blank" rel="noopener">忘记是最好的老师</a></p><p><img src="http://ppd8uau3t.bkt.clouddn.com/static/images/yuanlairuci.jpg" alt></p><p><strong><em>众所周知，IT其实是工科，实践大于死记硬背</em></strong>，所以我的系列博客主要是记录android和java后台需要掌握的一些知识的笔记，用思维导图加一些必要的说明，还有大厂的必问的面试题，比如手写快速排序，java集合的各种实现啊等，现在都是面试造航母，工作拧螺丝。没办法，毕竟坑位随着行业的成熟越来越少了，所以要不断的去学习和总结，单单看，看得再多也是没用的，我的博客主要是想用高考的那套：<strong><em>敲黑板，划重点</em></strong>， 可以在每时每刻快速的把知识点串联起来，这样就不用每次看完就忘了。刚刚开始写博客，我知道要写这个要花的时间和精力会很大，希望大家多体谅，我会尽量每周都至少更新连两篇</p><p><img src="http://ppd8uau3t.bkt.clouddn.com/static/images/niniubi.jpg" alt></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
